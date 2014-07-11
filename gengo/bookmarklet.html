@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Gengo bookmarklet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+  <body>
+    <ol>
+      <li>Show the bookmark bar of your browser.</li>
+      <li>Drag this <a href='javascript:(function(){var t=((window.getSelection&&window.getSelection())||(document.getSelection&&document.getSelection())||(document.selection&&document.selection.createRange&&document.selection.createRange().text)).toString()||document.body.innerText;var f=document.createElement("form");f.action="https://gengo.com/order/receive_job_post/";f.method="post";var i=document.createElement("input");i.type="text";i.name="body_src";i.value=t;f.appendChild(i);document.body.appendChild(f);f.submit();})();'>Gengo bookmarklet</a> to the bookmark bar.
+  </body>
+</html>
